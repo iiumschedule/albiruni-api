@@ -11,11 +11,19 @@ REST API Server for IIUM Course Browser: https://albiruni.iium.edu.my/myapps/Stu
 
 - [x] REST API access to IIUM Course Browser
 - [x] Redis for caching and faster responses
+- [x] Search for exam date
 - [ ] Search subject
 
 ## Database
 
+### For subjects 
+
 All subjects are fetched and saved in https://github.com/iqfareez/albiruni_fetcher/tree/master/db
+
+### For exams 
+
+Exams are downloaded from https://www.iium.edu.my/division/amad/academic-calendarimportant-dates. Then, parsed manually and saved
+to Excel file. See the files in the `db` folder.
 
 ## Installation
 
