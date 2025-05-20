@@ -31,3 +31,15 @@ to Excel file. See the files in the `db` folder.
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
+
+## Docker
+
+You can run the API and Redis using Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+The API will be available at [http://localhost:8000](http://localhost:8000).
+
+Environment variable `REDIS_URL` is set automatically for the API service.
