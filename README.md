@@ -3,24 +3,24 @@
 
 # Albiruni API Server
 
->**Warning** This project is EXPERIMENTAL
+> [!WARNING]
+> This project is EXPERIMENTAL
 
 REST API Server for IIUM Course Browser: https://albiruni.iium.edu.my/myapps/StudentOnline/schedule1.php
 
 ## Features
 
 - [x] REST API access to IIUM Course Browser
-- [x] Redis for caching and faster responses
 - [x] Search for exam date
 - [ ] Search subject
 
 ## Database
 
-### For subjects 
+### For subjects
 
 All subjects are fetched and saved in https://github.com/iqfareez/albiruni_fetcher/tree/master/db
 
-### For exams 
+### For exams
 
 Exams are downloaded from https://www.iium.edu.my/division/amad/academic-calendarimportant-dates. Then, parsed manually and saved
 to Excel file. See the files in the `db` folder.
@@ -41,5 +41,3 @@ docker-compose up --build
 ```
 
 The API will be available at [http://localhost:8000](http://localhost:8000).
-
-Environment variable `REDIS_URL` is set automatically for the API service.
